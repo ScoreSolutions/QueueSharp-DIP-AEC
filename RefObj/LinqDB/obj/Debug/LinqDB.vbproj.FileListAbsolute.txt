@@ -1,0 +1,8 @@
+D:\MyProject\QueueSharp-DIP-AEC\trunk\RefObj\LinqDB\bin\Debug\LinqDB.dll
+D:\MyProject\QueueSharp-DIP-AEC\trunk\RefObj\LinqDB\bin\Debug\LinqDB.pdb
+D:\MyProject\QueueSharp-DIP-AEC\trunk\RefObj\LinqDB\bin\Debug\LinqDB.xml
+D:\MyProject\QueueSharp-DIP-AEC\trunk\RefObj\LinqDB\obj\Debug\LinqDB.Resources.resources
+D:\MyProject\QueueSharp-DIP-AEC\trunk\RefObj\LinqDB\obj\Debug\LinqDB.vbproj.GenerateResource.Cache
+D:\MyProject\QueueSharp-DIP-AEC\trunk\RefObj\LinqDB\obj\Debug\LinqDB.dll
+D:\MyProject\QueueSharp-DIP-AEC\trunk\RefObj\LinqDB\obj\Debug\LinqDB.xml
+D:\MyProject\QueueSharp-DIP-AEC\trunk\RefObj\LinqDB\obj\Debug\LinqDB.pdb

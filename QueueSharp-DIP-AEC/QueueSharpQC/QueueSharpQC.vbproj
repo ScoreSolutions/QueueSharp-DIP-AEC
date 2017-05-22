@@ -1,0 +1,364 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D9CF20C7-32A6-4B53-8A28-51A0D7B65D33}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>QueueSharpQC.My.MyApplication</StartupObject>
+    <RootNamespace>QueueSharpQC</RootNamespace>
+    <AssemblyName>QueueSharpQC</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>QueueSharpQC.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>QueueSharpQC.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CodeVendor.Controls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\CodeVendor.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="mRibbon, Version=1.0.2853.35963, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\mRibbon.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IniReader.vb" />
+    <Compile Include="Main\frmErrorMessage.Designer.vb">
+      <DependentUpon>frmErrorMessage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\frmErrorMessage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\frmLogin.designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="QueueModule.vb" />
+    <Compile Include="Transaction\FormFloatAllservice.Designer.vb">
+      <DependentUpon>FormFloatAllservice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\FormFloatAllservice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction\frmAddServiceCustomer.designer.vb">
+      <DependentUpon>frmAddServiceCustomer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\frmAddServiceCustomer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction\frmCompactView_B.Designer.vb">
+      <DependentUpon>frmCompactView_B.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\frmCompactView_B.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction\frmCompactView_M.designer.vb">
+      <DependentUpon>frmCompactView_M.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\frmCompactView_M.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction\frmCompactView_S.Designer.vb">
+      <DependentUpon>frmCompactView_S.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\frmCompactView_S.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction\frmDialogCustomerInfo.Designer.vb">
+      <DependentUpon>frmDialogCustomerInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\frmDialogCustomerInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction\frmEndByService.designer.vb">
+      <DependentUpon>frmEndByService.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\frmEndByService.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction\frmQCResult.Designer.vb">
+      <DependentUpon>frmQCResult.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\frmQCResult.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction\frmReason.Designer.vb">
+      <DependentUpon>frmReason.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\frmReason.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction\frmQCResultTmp.Designer.vb">
+      <DependentUpon>frmQCResultTmp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\frmQCResultTmp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction\frmServiceConfirm.designer.vb">
+      <DependentUpon>frmServiceConfirm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\frmServiceConfirm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction\frmServiceQueue.designer.vb">
+      <DependentUpon>frmServiceQueue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\frmServiceQueue.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction\TaskBarNotifier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Main\frmErrorMessage.resx">
+      <DependentUpon>frmErrorMessage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction\FormFloatAllservice.resx">
+      <DependentUpon>FormFloatAllservice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction\frmAddServiceCustomer.resx">
+      <DependentUpon>frmAddServiceCustomer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction\frmCompactView_B.resx">
+      <DependentUpon>frmCompactView_B.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction\frmCompactView_M.resx">
+      <DependentUpon>frmCompactView_M.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction\frmCompactView_S.resx">
+      <DependentUpon>frmCompactView_S.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction\frmDialogCustomerInfo.resx">
+      <DependentUpon>frmDialogCustomerInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction\frmEndByService.resx">
+      <DependentUpon>frmEndByService.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction\frmQCResult.resx">
+      <DependentUpon>frmQCResult.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction\frmReason.resx">
+      <DependentUpon>frmReason.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction\frmQCResultTmp.resx">
+      <DependentUpon>frmQCResultTmp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction\frmServiceConfirm.resx">
+      <DependentUpon>frmServiceConfirm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction\frmServiceQueue.resx">
+      <DependentUpon>frmServiceQueue.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction\TaskBarNotifier.resx">
+      <DependentUpon>TaskBarNotifier.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\RefObj\Engine\Engine.vbproj">
+      <Project>{84f1c5f3-07a6-4523-8ee1-ddf2f4ebbcb2}</Project>
+      <Name>Engine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\RefObj\LinqDB\LinqDB.vbproj">
+      <Project>{c05271c5-84ac-42eb-b61c-34051a627aaf}</Project>
+      <Name>LinqDB</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\3.jpg" />
+    <Content Include="Resources\Add.png" />
+    <None Include="Resources\Save1.png" />
+    <None Include="Resources\QSharp_popup_14_211.png" />
+    <None Include="Resources\QSharp_popup_09_211.gif" />
+    <None Include="Resources\QSharp_popup_BG4.png" />
+    <None Include="Resources\QSharp_popup_BG22.png" />
+    <None Include="Resources\QSharp_popup_BG11.png" />
+    <None Include="Resources\QSharp_popup_BG3.png" />
+    <None Include="Resources\QSharp_popup_122.png" />
+    <None Include="Resources\QSharp_popup_14_22.png" />
+    <None Include="Resources\Add1.png" />
+    <Content Include="Resources\Back50.png" />
+    <Content Include="Resources\bg.gif" />
+    <Content Include="Resources\BgColorIcon.png" />
+    <Content Include="Resources\breakpoint_into.png" />
+    <None Include="Resources\scroll_ok1.png" />
+    <None Include="Resources\check1.png" />
+    <None Include="Resources\Top1.png" />
+    <None Include="Resources\CustomerInfo1.png" />
+    <None Include="Resources\QSharp_popup_BG21.png" />
+    <None Include="Resources\breakpoint_into1.png" />
+    <Content Include="Resources\calendar.png" />
+    <Content Include="Resources\cancel.jpg" />
+    <Content Include="Resources\check.png" />
+    <Content Include="Resources\checkout.png" />
+    <Content Include="Resources\Close.png" />
+    <Content Include="Resources\CustomerInfo.png" />
+    <Content Include="Resources\drug.png" />
+    <Content Include="Resources\EndByService.png" />
+    <Content Include="Resources\endQ_2.png" />
+    <Content Include="Resources\first_aid.png" />
+    <Content Include="Resources\forbidden.png" />
+    <Content Include="Resources\Forword50.png" />
+    <Content Include="Resources\Lock.png" />
+    <Content Include="Resources\login-icon.png" />
+    <Content Include="Resources\Login.png" />
+    <Content Include="Resources\Logo.gif" />
+    <Content Include="Resources\Logout_button.png" />
+    <Content Include="Resources\money.png" />
+    <Content Include="Resources\Monitor Panther.png" />
+    <Content Include="Resources\MsSQL.png" />
+    <Content Include="Resources\Next.png" />
+    <Content Include="Resources\pill_blue.png" />
+    <Content Include="Resources\printer.png" />
+    <Content Include="Resources\QSharp_popup_09_2.gif" />
+    <Content Include="Resources\QSharp_popup_09_21.gif" />
+    <None Include="Resources\QSharp_popup_09_22.gif" />
+    <Content Include="Resources\QSharp_popup_10.png" />
+    <Content Include="Resources\QSharp_popup_101.png" />
+    <None Include="Resources\QSharp_popup_132.png" />
+    <None Include="Resources\QSharp_popup_112.png" />
+    <None Include="Resources\QSharp_popup_102.png" />
+    <Content Include="Resources\QSharp_popup_10_2.gif" />
+    <Content Include="Resources\QSharp_popup_10_2.png" />
+    <Content Include="Resources\QSharp_popup_10_21.png" />
+    <None Include="Resources\QSharp_popup_2_132.png" />
+    <None Include="Resources\QSharp_popup_2_131.png" />
+    <None Include="Resources\QSharp_popup_10_22.png" />
+    <Content Include="Resources\QSharp_popup_11.png" />
+    <Content Include="Resources\QSharp_popup_111.png" />
+    <Content Include="Resources\QSharp_popup_12.png" />
+    <Content Include="Resources\QSharp_popup_121.png" />
+    <Content Include="Resources\QSharp_popup_13.png" />
+    <Content Include="Resources\QSharp_popup_131.png" />
+    <Content Include="Resources\QSharp_popup_14_2.png" />
+    <Content Include="Resources\QSharp_popup_14_21.png" />
+    <Content Include="Resources\QSharp_popup_2_13.png" />
+    <Content Include="Resources\QSharp_popup_BG.png" />
+    <Content Include="Resources\QSharp_popup_BG1.png" />
+    <Content Include="Resources\QSharp_popup_BG2.png" />
+    <Content Include="Resources\rad.png" />
+    <Content Include="Resources\Refresh50.png" />
+    <Content Include="Resources\Reprint.jpg" />
+    <Content Include="Resources\Reprint.png" />
+    <Content Include="Resources\Save.png" />
+    <Content Include="Resources\scroll_error.png" />
+    <Content Include="Resources\scroll_ok.png" />
+    <Content Include="Resources\scroll_warning.png" />
+    <Content Include="Resources\ServicePriority.gif" />
+    <Content Include="Resources\ServicePriority2.gif" />
+    <Content Include="Resources\Top.png" />
+    <Content Include="Resources\webcam.png" />
+    <Content Include="Resources\window_preferences.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
